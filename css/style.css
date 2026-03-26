@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --menu-color-green: #00A2BB;
+    --menu-color-grey: #464646;
+    --pink-bg: #ECE0FA;
+    --light-blue-bg: #D6F4F8;
+    --button-bg: #C8437B;
+    --text-white: white;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+li a {
+    color: var(--menu-color-grey) !important;
+    text-decoration: none !important;
+    display: flex;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+
+li a:active {
+    color: var(--menu-color-green) !important;
+}
+
+li a:hover {
+    color: var(--menu-color-green);
+    text-decoration: underline;
+}
+
+.light-pink-bg {
+    background: linear-gradient(to right, #D6F4F8, #ECE0FA);
+}
+
+.home-section {
+    position: relative;
+}
+
+.home-title {
+    text-transform: uppercase;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.home-title span {
+    color: var(--menu-color-green);
+}
+
+.home-desc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#fullButton {
+    color: white;
+    background: #C8437B;
+    min-width: 136px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#outlineButton {
+    color: #C8437B;
+    background: white;
+    border-color: #C8437B;
+    min-width: 136px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#fullButton:hover {
+    transform: translateY(-2px);
+}
+
+#outlineButton:hover {
+    transform: translateY(-2px);
+}
+
+.home-image {
+    position: relative;
+    bottom: -32px;
+}
+
+.about-section {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    background: linear-gradient(to right, #FEFDFF, #ffffff);
+}
+
+.about-img {
+    /* box-shadow: 0px 10px 30px rgb(152 161 236); */
+}
+
+.paw {
+    opacity: 0.3;
+    height: 75px;
+}
+
+.left-top {
+    position: absolute;
+    top: 35px;
+    rotate: 30deg;
+}
+
+.right-top {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    rotate: -40deg;
+}
+
+.right-top2 {
+    position: absolute;
+    top: 90px;
+    right: 90px;
+    rotate: 40deg;
+    height: 55px;
+    opacity: 0.2;
+}
+
+.mid-bottom {
+    position: absolute;
+    bottom: 2px;
+    left: 40%;
+    height: 115px;
+    rotate: 40deg;
+
+}
+
+.servicecard-box {
+    margin: 25px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.servicecard {
+    font-size: 1rem;
+    text-align: center;
+    padding: 17px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0px 10px 30px rgb(180 181 191);
+}
+
+.servicecard-box .active {
+    background-color: #e1f0f6;
+}
+
+.servicecard-icon {
+    height: 32px;
+    margin-right: 5px;
+}
+
+.service-card-section {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    background: linear-gradient(to right, #d6f4f845, #ece0fa6b);
+}
+
+.service-section {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to right, #FEFDFF, #ffffff);
+    position: relative;
+}
+
+.service-title {}
+
+.bgCard {
+    height: 270px;
+    width: 290px;
+    border: 1px solid red;
+    position: relative;
+    border-radius: 17px;
+    border: 1px solid #c8437b82;
+    box-shadow: 1px 1px 35px #c8437b42;
+}
+
+.service1-img {
+    position: absolute;
+    bottom: -1%;
+    z-index: 100;
+}
+
+.service-image-section {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.service-left-top {
+    position: absolute;
+    top: 25%;
+    left: 34px;
+    rotate: 32deg;
+    height: 171px;
+    opacity: 0.15;
+}
+
+.service-right-top {
+    position: absolute;
+    top: -65px;
+    right: 15%;
+    height: 125px;
+    rotate: -21deg;
+    opacity: 0.15;
+}
+
+.service-right-top2 {
+    position: absolute;
+    top: 2%;
+    right: 20%;
+    height: 125px;
+    rotate: 25deg;
+    opacity: 0.15;
+}
+
+.service-mid-bottom {
+    position: absolute;
+    right: 31%;
+    bottom: 8%;
+    height: 115px;
+    rotate: 25deg;
+    opacity: 0.15;
+}
+
+.offer-section {
+    background: #FBF0FD;
+    border-radius: 14px;
+    margin: 20px;
+    position: relative;
+}
+
+.offer-image {
+    height: 250px !important;
+    position: absolute;
+    top: -75px;
+}
+
+.offerCard {
+    border-radius: 15px;
+    border: 1px solid #c8437b82;
+    padding: 14px;
+    display: flex;
+}
+
+.offer-left {
+    color: var(--menu-color-green);
+}
+
+.offer-left button {
+    background: #00A2BB;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 20px;
+    margin-top: 5%;
+}
+
+.offer-right {
+    padding-top: 2%;
+}
+
+.footer-section {
+    border-top: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.footer-left-bottom {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+}
+
+.footer-right-top {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    height: 150px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.contact-section {
+    background-color: #EDFAFC;
+}
+
+.contact-header {
+    text-align: center;
+}
+
+.contact-card {
+    border: 1px solid #C8437B;
+    border-radius: 12px;
+    padding: 28px 18px;
+    box-shadow: 0px 10px 30px rgb(180 181 191);
+    background-color: white;
+}
+
+.contact-icon {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    margin: -60px auto 25px;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-text {
+    font-size: 14px;
+}
+
+.contact-text p {
+    margin-bottom: 2px;
+
+}
+
+@media (max-width: 991px) {
+
+    .bgCard {
+        width: 100px;
+        height: 100px;
+    }
+
+    .service1-img {
+        height: 200px !important;
+    }
+
+    .offer-image {
+        display: none;
+    }
+
+    .home-image {
+        width: 50%;
+    }
+
+    .contact-row {
+        gap: 15px;
+    }
+}
